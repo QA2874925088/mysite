@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*a:link{link伪类用于设置超链接在从来没有单机过的时候的超链接的外观
+			color:red;
+			text-decoration:none;
+		}
+
+		a:visited{visited伪类用于设置超链接在访问之后的超链接的外观
+			color:red;
+			text-decoration:none;
+		}
+
+		a:active{active伪类用于设置鼠标按住在超链接上按住不放的情况下超链接的外观
+			color:red;
+			text-decoration:none;
+		}*/
+
+		a{/*用a标签选择器设置a的外观，等价于用前面的三个伪类设置效果*/
+			color:red;
+			text-decoration:none;
+			/*border:none;*//*兼容代码，去掉ie中显示的图片超链接的蓝色边框*/
+		}
+
+		a:hover{/*hover伪类用于设置鼠标停留在超链接文本上的时候超链接的外观*/
+			color:green;
+			border-bottom:double 5px blue;
+			padding-bottom:5px;
+		}
+
+		a.pic:hover{
+			border-bottom:none;
+			padding-bottom:0px;
+		}
+		
+		img{
+			border:none;/*兼容代码，去掉ie中显示的图片超链接的蓝色边框*/
+		}
+
+	</style>
+</head>
+<body>
+	<a href="http://www.baidu.com" target=_self title="你将跳转到百度搜索引擎">跳转到百度</a>
+	<!-- target用于设置跳转目标网页在什么窗口显示，_black表示在新窗口显示,_self表示在当前窗口显示，
+		title属性用于设置超链接的即时提示文字-->
+	<a href="http:www.163.com" title="你将跳转到网易的主页" class="pic" border="0"><img src="images/1.jpg"></a>
+</body>
+</html>
